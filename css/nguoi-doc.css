@@ -1,0 +1,136 @@
+.tieu-de-trang {
+    background-color: #176b3a;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.tieu-de-trang h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.noi-dung-nguoi-doc {
+    padding: 40px 0;
+}
+
+.thanh-cong-cu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.tim-kiem-nguoi-doc {
+    display: flex;
+    gap: 10px;
+}
+
+.tim-kiem-nguoi-doc input,
+.tim-kiem-nguoi-doc select {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+.tim-kiem-nguoi-doc input {
+    width: 260px;
+}
+
+.tim-kiem-nguoi-doc button,
+.nut-them-nguoi-doc {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.tim-kiem-nguoi-doc button {
+    background-color: #555;
+}
+
+.nut-them-nguoi-doc {
+    background-color: #176b3a;
+}
+
+.bang-nguoi-doc {
+    overflow-x: auto;
+}
+
+.bang-nguoi-doc table {
+    width: 100%;
+    min-width: 1100px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.bang-nguoi-doc th,
+.bang-nguoi-doc td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.bang-nguoi-doc th {
+    background-color: #176b3a;
+    color: white;
+}
+
+.bang-nguoi-doc tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.trang-thai {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.hoat-dong {
+    color: green;
+}
+
+.bi-khoa {
+    color: red;
+}
+
+.nut-sua-nguoi-doc,
+.nut-xoa-nguoi-doc {
+    padding: 6px 9px;
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nut-sua-nguoi-doc {
+    background-color: #d68a00;
+}
+
+.nut-xoa-nguoi-doc {
+    background-color: #c93434;
+}
+
+@media screen and (max-width: 800px) {
+    .thanh-cong-cu {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .tim-kiem-nguoi-doc {
+        flex-direction: column;
+    }
+
+    .tim-kiem-nguoi-doc input {
+        width: 100%;
+    }
+
+    .nut-them-nguoi-doc {
+        width: 100%;
+    }
+}

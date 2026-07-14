@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch sử mượn - trả</title>
+    <link rel="stylesheet" href="../css/trang-chu.css">
+    <link rel="stylesheet" href="../css/lich-su.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container header">
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo.jpg" alt="Logo thư viện">
+                <span>THƯ VIỆN TRI THỨC</span>
+            </a>
+            <nav>
+                <a href="../index.html">Trang chủ</a>
+                <a href="quan-ly-sach.html">Quản lý sách</a>
+                <a href="nguoi-doc.html">Người đọc</a>
+                <a href="muon-tra.html">Mượn - trả</a>
+                <a href="lich-su.html" class="active">Lịch sử</a>
+                <a href="gioi-thieu.html">Giới thiệu</a>
+                <a href="lien-he.html">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="tieu-de-trang">
+            <div class="container">
+                <h1>Lịch sử mượn - trả</h1>
+                <p>Theo dõi các hoạt động mượn và trả sách trong thư viện.</p>
+            </div>
+        </section>
+
+        <section class="container noi-dung-lich-su">
+            <div class="thong-ke-lich-su">
+                <div class="o-thong-ke-lich-su">
+                    <h3>4</h3>
+                    <p>Tổng số phiếu</p>
+                </div>
+                <div class="o-thong-ke-lich-su">
+                    <h3>2</h3>
+                    <p>Đang mượn</p>
+                </div>
+                <div class="o-thong-ke-lich-su">
+                    <h3>1</h3>
+                    <p>Đã trả</p>
+                </div>
+                <div class="o-thong-ke-lich-su">
+                    <h3>1</h3>
+                    <p>Quá hạn</p>
+                </div>
+            </div>
+
+            <div class="thanh-tim-lich-su">
+                <input type="text" id="o-tim-lich-su" placeholder="Nhập mã phiếu, người đọc hoặc tên sách">
+                <select id="loc-trang-thai-lich-su">
+                    <option value="">Tất cả trạng thái</option>
+                    <option value="Đang mượn">Đang mượn</option>
+                    <option value="Đã trả">Đã trả</option>
+                    <option value="Quá hạn">Quá hạn</option>
+                </select>
+                <button type="button" id="nut-tim-lich-su">Tìm kiếm</button>
+                <button type="button" id="nut-lam-moi-lich-su">Làm mới</button>
+            </div>
+
+            <p class="so-luong-ket-qua">
+                Số kết quả: <strong id="so-luong-ket-qua">4</strong>
+            </p>
+
+            <div class="bang-lich-su">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mã phiếu</th>
+                            <th>Người đọc</th>
+                            <th>Tên sách</th>
+                            <th>Ngày mượn</th>
+                            <th>Hạn trả</th>
+                            <th>Ngày trả</th>
+                            <th>Trạng thái</th>
+                        </tr>
+                    </thead>
+                    <tbody id="danh-sach-lich-su">
+                        <tr>
+                            <td>PM001</td>
+                            <td>ND001 - Từ Huy</td>
+                            <td>Cấu trúc dữ liệu và thuật toán (Tập 1)</td>
+                            <td>24/07/2026</td>
+                            <td>24/08/2026</td>
+                            <td>-</td>
+                            <td><span class="trang-thai-lich-su dang-muon">Đang mượn</span></td>
+                        </tr>
+                        <tr>
+                            <td>PM002</td>
+                            <td>ND002 - Nguyễn Trọng Văn</td>
+                            <td>IELTS 4 kỹ năng (Tập 1)</td>
+                            <td>06/06/2026</td>
+                            <td>06/07/2026</td>
+                            <td>-</td>
+                            <td><span class="trang-thai-lich-su qua-han">Quá hạn</span></td>
+                        </tr>
+                        <tr>
+                            <td>PM003</td>
+                            <td>ND004 - Lê Khánh Văn</td>
+                            <td>Lão Hạc</td>
+                            <td>01/06/2026</td>
+                            <td>01/07/2026</td>
+                            <td>17/06/2026</td>
+                            <td><span class="trang-thai-lich-su da-tra">Đã trả</span></td>
+                        </tr>
+                        <tr>
+                            <td>PM004</td>
+                            <td>ND003 - Nguyễn Lê Minh Thuận</td>
+                            <td>Lập trình Python cơ bản</td>
+                            <td>14/07/2026</td>
+                            <td>14/08/2026</td>
+                            <td>-</td>
+                            <td><span class="trang-thai-lich-su dang-muon">Đang mượn</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p id="khong-co-lich-su" class="khong-co-du-lieu">
+                Không tìm thấy lịch sử phù hợp.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Website quản lý thư viện</p>
+            <p>Sinh viên thực hiện: Nguyễn Thái Vinh</p>
+            <p>MSSV: 110125210</p>
+            <p>Lớp: DA25TTD</p>
+            <p>© <span id="nam-hien-tai"></span> Hệ thống quản lý thư viện</p>
+        </div>
+    </footer>
+</body>
+</html>

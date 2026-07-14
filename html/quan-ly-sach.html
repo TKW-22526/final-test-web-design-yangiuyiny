@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sách</title>
+    <link rel="stylesheet" href="../css/trang-chu.css">
+    <link rel="stylesheet" href="../css/quan-ly-sach.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container header">
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo.jpg" alt="Logo thư viện">
+                <span>THƯ VIỆN TRI THỨC</span>
+            </a>
+            <nav>
+                <a href="../index.html">Trang chủ</a>
+                <a href="quan-ly-sach.html" class="active">Quản lý sách</a>
+                <a href="nguoi-doc.html">Người đọc</a>
+                <a href="muon-tra.html">Mượn - trả</a>
+                <a href="lich-su.html">Lịch sử</a>
+                <a href="gioi-thieu.html">Giới thiệu</a>
+                <a href="lien-he.html">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="tieu-de-trang">
+            <div class="container">
+                <h1>Quản lý sách</h1>
+                <p>Quản lý danh sách sách hiện có trong thư viện.</p>
+            </div>
+        </section>
+
+        <section class="container noi-dung-quan-ly">
+            <div class="thanh-cong-cu">
+                <div class="tim-kiem-sach">
+                    <input type="text" id="o-tim-kiem" placeholder="Nhập tên sách hoặc tác giả">
+                    <select id="loc-the-loai">
+                    <option value="">Tất cả thể loại</option>
+                    <option value="Công nghệ thông tin">Công nghệ thông tin</option>
+                    <option value="Tiếng Anh">Tiếng Anh</option>
+                    <option value="Văn học">Văn học</option>
+                </select>
+                    <button type="button" id="nut-tim-kiem">Tìm kiếm</button>
+                </div>
+                <button type="button" class="nut-them-sach" id="nut-them-sach">+ Thêm sách</button>
+            </div>
+
+            <div class="bang-sach">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mã sách</th>
+                            <th>Tên sách</th>
+                            <th>Tác giả</th>
+                            <th>Thể loại</th>
+                            <th>Số lượng</th>
+                            <th>Trạng thái</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="danh-sach-sach">
+                        <tr>
+                            <td>S001</td>
+                            <td>Cấu trúc dữ liệu và thuật toán: Phân tích và cài đặt trên C/C++ (Tập 1)</td>
+                            <td>Trần Thông Quế</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>6</td>
+                            <td><span class="trang-thai con-sach">Còn sách</span></td>
+                            <td>
+                                <a href="chi-tiet-sach.html?ma=S001" class="nut-xem">Xem</a>
+                                <button type="button" class="nut-sua">Sửa</button>
+                                <button type="button" class="nut-xoa">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S002</td>
+                            <td>Lập trình Python cơ bản, cho người mới bắt đầu</td>
+                            <td>Nguyễn Ngọc Tân</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>3</td>
+                            <td><span class="trang-thai con-sach">Còn sách</span></td>
+                            <td>
+                                <a href="chi-tiet-sach.html?ma=S002" class="nut-xem">Xem</a>
+                                <button type="button" class="nut-sua">Sửa</button>
+                                <button type="button" class="nut-xoa">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S003</td>
+                            <td>Sách Chat GPT - Ứng Dụng Trí Tuệ Nhân Tạo Trong Công Việc</td>
+                            <td>Dr. Gleb Tsipursky</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>4</td>
+                            <td><span class="trang-thai con-sach">Còn sách</span></td>
+                            <td>
+                                <a href="chi-tiet-sach.html?ma=S003" class="nut-xem">Xem</a>
+                                <button type="button" class="nut-sua">Sửa</button>
+                                <button type="button" class="nut-xoa">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S004</td>
+                            <td>Sách IELTS 4 Kỹ Năng Lộ Trình Cho Người Mới Bắt Đầu Đến Band 5.0 (Tập 1)</td>
+                            <td>IELTS Fighter</td>
+                            <td>Tiếng Anh</td>
+                            <td>0</td>
+                            <td><span class="trang-thai het-sach">Hết sách</span></td>
+                            <td>
+                                <a href="chi-tiet-sach.html?ma=S004" class="nut-xem">Xem</a>
+                                <button type="button" class="nut-sua">Sửa</button>
+                                <button type="button" class="nut-xoa">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S005</td>
+                            <td>Sách IELTS 4 Kỹ Năng Lộ Trình Cho Người Mới Bắt Đầu Đến Band 5.0 (Tập 2)</td>
+                            <td>IELTS Fighter</td>
+                            <td>Tiếng Anh</td>
+                            <td>2</td>
+                            <td><span class="trang-thai con-sach">Còn sách</span></td>
+                            <td>
+                                <a href="chi-tiet-sach.html?ma=S005" class="nut-xem">Xem</a>
+                                <button type="button" class="nut-sua">Sửa</button>
+                                <button type="button" class="nut-xoa">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S006</td>
+                            <td>Sách Hai Đứa Trẻ</td>
+                            <td>Thạch Lam</td>
+                            <td>Văn học</td>
+                            <td>5</td>
+                            <td><span class="trang-thai con-sach">Còn sách</span></td>
+                            <td>
+                                <a href="chi-tiet-sach.html?ma=S006" class="nut-xem">Xem</a>
+                                <button type="button" class="nut-sua">Sửa</button>
+                                <button type="button" class="nut-xoa">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S007</td>
+                            <td>Lão Hạc</td>
+                            <td>Nam Cao</td>
+                            <td>Văn học</td>
+                            <td>4</td>
+                            <td><span class="trang-thai con-sach">Còn sách</span></td>
+                            <td>
+                                <a href="chi-tiet-sach.html?ma=S007" class="nut-xem">Xem</a>
+                                <button type="button" class="nut-sua">Sửa</button>
+                                <button type="button" class="nut-xoa">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>S008</td>
+                            <td>Vợ Nhặt</td>
+                            <td>Kim Lân</td>
+                            <td>Văn học</td>
+                            <td>8</td>
+                            <td><span class="trang-thai con-sach">Còn sách</span></td>
+                            <td>
+                                <a href="chi-tiet-sach.html?ma=S008" class="nut-xem">Xem</a>
+                                <button type="button" class="nut-sua">Sửa</button>
+                                <button type="button" class="nut-xoa">Xóa</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Website quản lý thư viện</p>
+            <p>Sinh viên thực hiện: Nguyễn Thái Vinh</p>
+            <p>MSSV: 110125210</p>
+            <p>Lớp: DA25TTD</p>
+            <p>© <span id="nam-hien-tai"></span> Hệ thống quản lý thư viện</p>
+        </div>
+    </footer>
+</body>
+</html>

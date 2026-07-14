@@ -1,0 +1,153 @@
+.tieu-de-trang {
+    background-color: #176b3a;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.tieu-de-trang h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.noi-dung-gioi-thieu {
+    padding: 40px 0;
+}
+
+.gioi-thieu-chung {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.hinh-gioi-thieu img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.thong-tin-gioi-thieu h2 {
+    color: #176b3a;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.thong-tin-gioi-thieu p {
+    margin-bottom: 10px;
+}
+
+.muc-tieu {
+    margin-bottom: 30px;
+}
+
+.muc-tieu h2,
+.chuc-nang-he-thong h2,
+.thong-tin-sinh-vien h2 {
+    color: #176b3a;
+}
+
+.danh-sach-muc-tieu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.o-muc-tieu {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.o-muc-tieu h3 {
+    color: #176b3a;
+    margin-bottom: 10px;
+}
+
+.chuc-nang-he-thong {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.chuc-nang-he-thong h2 {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.chuc-nang-he-thong ul {
+    padding-left: 25px;
+}
+
+.chuc-nang-he-thong li {
+    margin-bottom: 8px;
+}
+
+.thong-tin-sinh-vien {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.thong-tin-sinh-vien h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.thong-tin-sinh-vien table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.thong-tin-sinh-vien th,
+.thong-tin-sinh-vien td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.thong-tin-sinh-vien th {
+    width: 220px;
+    background-color: #e7f3eb;
+    color: #176b3a;
+}
+
+@media screen and (max-width: 800px) {
+    .gioi-thieu-chung {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .thong-tin-gioi-thieu h2 {
+        text-align: center;
+    }
+
+    .danh-sach-muc-tieu {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hinh-gioi-thieu img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .thong-tin-sinh-vien {
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    .thong-tin-sinh-vien table {
+        min-width: 500px;
+    }
+}

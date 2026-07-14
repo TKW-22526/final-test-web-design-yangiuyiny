@@ -1,0 +1,131 @@
+.tieu-de-trang {
+    background-color: #176b3a;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.tieu-de-trang h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.noi-dung-muon-tra {
+    padding: 40px 0;
+}
+
+.khung-lap-phieu,
+.khung-danh-sach-muon {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.khung-lap-phieu h2,
+.khung-danh-sach-muon h2 {
+    text-align: left;
+    color: #176b3a;
+    margin-bottom: 20px;
+}
+
+.danh-sach-o-nhap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.o-nhap label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.o-nhap input,
+.o-nhap select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+.nut-lap-phieu {
+    background-color: #176b3a;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.bang-muon-tra {
+    overflow-x: auto;
+}
+
+.bang-muon-tra table {
+    width: 100%;
+    min-width: 1150px;
+    border-collapse: collapse;
+}
+
+.bang-muon-tra th,
+.bang-muon-tra td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.bang-muon-tra th {
+    background-color: #176b3a;
+    color: white;
+}
+
+.bang-muon-tra tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.trang-thai-muon {
+    font-weight: bold;
+}
+
+.dang-muon {
+    color: #1677b8;
+}
+
+.qua-han {
+    color: red;
+}
+
+.da-tra {
+    color: green;
+}
+
+.nut-tra-sach,
+.nut-da-tra {
+    padding: 7px 10px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+.nut-tra-sach {
+    background-color: #176b3a;
+    cursor: pointer;
+}
+
+.nut-da-tra {
+    background-color: #777;
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 800px) {
+    .danh-sach-o-nhap {
+        grid-template-columns: 1fr;
+    }
+
+    .nut-lap-phieu {
+        width: 100%;
+    }
+}

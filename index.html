@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý thư viện</title>
+    <link rel="icon" type="image/png" href="assets/logo.jpg">
+    <link rel="stylesheet" href="css/trang-chu.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container header">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.jpg" alt="Logo thư viện">
+                <span>THƯ VIỆN TRI THỨC</span>
+            </a>
+            <nav>
+                <a href="index.html" class="active">Trang chủ</a>
+                <a href="html/quan-ly-sach.html">Quản lý sách</a>
+                <a href="html/nguoi-doc.html">Người đọc</a>
+                <a href="html/muon-tra.html">Mượn - trả</a>
+                <a href="html/lich-su.html">Lịch sử</a>
+                <a href="html/gioi-thieu.html">Giới thiệu</a>
+                <a href="html/lien-he.html">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="container">
+                <h1>Hệ thống quản lý thư viện</h1>
+                <p>Hỗ trợ quản lý sách, người đọc và hoạt động mượn - trả sách.</p>
+                <a href="html/quan-ly-sach.html" class="nut">Xem danh sách sách</a>
+            </div>
+        </section>
+
+        <section class="container thong-ke">
+            <h2>Thống kê thư viện</h2>
+            <div class="danh-sach-thong-ke">
+                <div class="o-thong-ke">
+                    <h3 id="tong-sach">32</h3>
+                    <p>Tổng số sách</p>
+                </div>
+                <div class="o-thong-ke">
+                    <h3 id="tong-nguoi-doc">5</h3>
+                    <p>Người đọc</p>
+                </div>
+                <div class="o-thong-ke">
+                    <h3 id="dang-muon">3</h3>
+                    <p>Đang được mượn</p>
+                </div>
+                <div class="o-thong-ke">
+                    <h3 id="qua-han">1</h3>
+                    <p>Đang quá hạn</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="chuc-nang">
+            <div class="container">
+                <h2>Chức năng chính</h2>
+                <div class="danh-sach-chuc-nang">
+                    <div class="o-chuc-nang">
+                        <h3>Quản lý sách</h3>
+                        <p>Xem, tìm kiếm, thêm, sửa và xóa thông tin sách.</p>
+                        <a href="html/quan-ly-sach.html">Xem danh sách</a>
+                    </div>
+                    <div class="o-chuc-nang">
+                        <h3>Quản lý người đọc</h3>
+                        <p>Quản lý thông tin của người đọc trong thư viện.</p>
+                        <a href="html/nguoi-doc.html">Xem người đọc</a>
+                    </div>
+                    <div class="o-chuc-nang">
+                        <h3>Mượn - trả sách</h3>
+                        <p>Lập phiếu mượn và cập nhật trạng thái trả sách.</p>
+                        <a href="html/muon-tra.html">Mượn - trả sách</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container sach-noi-bat">
+            <h2>Một số sách trong thư viện</h2>
+            <div class="danh-sach-sach">
+                <div class="sach">
+                    <div class="bia-sach">
+                        <img src="assets/images/cntt001.jpg" alt="Bìa sách Cấu trúc dữ liệu và thuật toán">
+                    </div>
+                    <h3>Cấu trúc dữ liệu và thuật toán Phân tích và cài đặt trên C/C++ (Tập 1)</h3>
+                    <p>Tác giả: Trần Thông Quế</p>
+                    <p>Thể loại: Công nghệ thông tin</p>
+                    <p class="con-sach">Còn sách</p>
+                    <a href="html/chi-tiet-sach.html?ma=S001">Xem chi tiết</a>
+                </div>
+                <div class="sach">
+                    <div class="bia-sach">
+                        <img src="assets/images/cntt002.jpg" alt="Bìa sách Lập trình Python cơ bản, cho người mới bắt đầu">
+                    </div>
+                    <h3>Lập trình Python cơ bản, cho người mới bắt đầu</h3>
+                    <p>Tác giả: Nguyễn Ngọc Tân</p>
+                    <p>Thể loại: Công nghệ thông tin</p>
+                    <p class="con-sach">Còn sách</p>
+                    <a href="html/chi-tiet-sach.html?ma=S003">Xem chi tiết</a>
+                </div>
+                <div class="sach">
+                    <div class="bia-sach">
+                        <img src="assets/images/eng001.jpg" alt="Bìa sách Sách IELTS 4 Kỹ Năng Lộ Trình Cho Người Mới Bắt Đầu Đến Band 5.0 (Tập 1)">
+                    </div>
+                    <h3>Sách IELTS 4 Kỹ Năng Lộ Trình Cho Người Mới Bắt Đầu Đến Band 5.0 (Tập 1)</h3>
+                    <p>Tác giả: IELTS Fighter</p>
+                    <p>Thể loại: Tiếng Anh</p>
+                    <p class="het-sach">Đã hết sách</p>
+                    <a href="html/chi-tiet-sach.html?ma=S004">Xem chi tiết</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Website quản lý thư viện</p>
+            <p>Sinh viên thực hiện: Nguyễn Thái Vinh</p>
+            <p>MSSV: 110125210</p>
+            <p>Lớp: DA25TTD</p>
+            <p>© <span id="nam-hien-tai"></span> Hệ thống quản lý thư viện</p>
+        </div>
+    </footer>
+</body>
+</html>

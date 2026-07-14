@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="../css/trang-chu.css">
+    <link rel="stylesheet" href="../css/lien-he.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container header">
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo.jpg" alt="Logo thư viện">
+                <span>THƯ VIỆN TRI THỨC</span>
+            </a>
+            <nav>
+                <a href="../index.html">Trang chủ</a>
+                <a href="quan-ly-sach.html">Quản lý sách</a>
+                <a href="nguoi-doc.html">Người đọc</a>
+                <a href="muon-tra.html">Mượn - trả</a>
+                <a href="lich-su.html">Lịch sử</a>
+                <a href="gioi-thieu.html">Giới thiệu</a>
+                <a href="lien-he.html" class="active">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="tieu-de-trang">
+            <div class="container">
+                <h1>Liên hệ</h1>
+                <p>Gửi thông tin hoặc ý kiến đến thư viện.</p>
+            </div>
+        </section>
+
+        <section class="container noi-dung-lien-he">
+            <div class="thong-tin-lien-he">
+                <h2>Thông tin liên hệ</h2>
+                <div class="muc-lien-he">
+                    <h3>Địa chỉ</h3>
+                    <p>Trường Đại học Trà Vinh, tỉnh Vĩnh Long</p>
+                </div>
+                <div class="muc-lien-he">
+                    <h3>Số điện thoại</h3>
+                    <p>0384 298 113</p>
+                </div>
+                <div class="muc-lien-he">
+                    <h3>Email</h3>
+                    <p>yang018349@gmail.com</p>
+                </div>
+                <div class="muc-lien-he">
+                    <h3>Thời gian làm việc</h3>
+                    <p>Thứ Hai - Thứ Sáu: 7:00 - 17:00</p>
+                    <p>Thứ Bảy: 7:00 - 11:00</p>
+                </div>
+            </div>
+
+            <div class="khung-form-lien-he">
+                <h2>Gửi thông tin liên hệ</h2>
+                <form id="form-lien-he">
+                    <div class="o-nhap-lien-he">
+                        <label for="ho-ten-lien-he">Họ và tên</label>
+                        <input type="text" id="ho-ten-lien-he" placeholder="Nhập họ và tên">
+                    </div>
+                    <div class="o-nhap-lien-he">
+                        <label for="email-lien-he">Email</label>
+                        <input type="email" id="email-lien-he" placeholder="Nhập email">
+                    </div>
+                    <div class="o-nhap-lien-he">
+                        <label for="so-dien-thoai-lien-he">Số điện thoại</label>
+                        <input type="text" id="so-dien-thoai-lien-he" placeholder="Nhập số điện thoại">
+                    </div>
+                    <div class="o-nhap-lien-he">
+                        <label for="chu-de-lien-he">Chủ đề</label>
+                        <select id="chu-de-lien-he">
+                            <option value="">-- Chọn chủ đề --</option>
+                            <option value="Góp ý website">Góp ý website</option>
+                            <option value="Thông tin sách">Thông tin sách</option>
+                            <option value="Mượn - trả sách">Mượn - trả sách</option>
+                            <option value="Vấn đề khác">Vấn đề khác</option>
+                        </select>
+                    </div>
+                    <div class="o-nhap-lien-he">
+                        <label for="noi-dung-lien-he">Nội dung</label>
+                        <textarea id="noi-dung-lien-he" rows="6" placeholder="Nhập nội dung liên hệ"></textarea>
+                    </div>
+                    <button type="submit" class="nut-gui-lien-he">Gửi liên hệ</button>
+                    <button type="reset" class="nut-nhap-lai">Nhập lại</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Website quản lý thư viện</p>
+            <p>Sinh viên thực hiện: Nguyễn Thái Vinh</p>
+            <p>MSSV: 110125210</p>
+            <p>Lớp: DA25TTD</p>
+            <p>© <span id="nam-hien-tai"></span> Hệ thống quản lý thư viện</p>
+        </div>
+    </footer>
+</body>
+</html>

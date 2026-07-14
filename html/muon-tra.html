@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mượn - trả sách</title>
+    <link rel="stylesheet" href="../css/trang-chu.css">
+    <link rel="stylesheet" href="../css/muon-tra.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container header">
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo.jpg" alt="Logo thư viện">
+                <span>THƯ VIỆN TRI THỨC</span>
+            </a>
+            <nav>
+                <a href="../index.html">Trang chủ</a>
+                <a href="quan-ly-sach.html">Quản lý sách</a>
+                <a href="nguoi-doc.html">Người đọc</a>
+                <a href="muon-tra.html" class="active">Mượn - trả</a>
+                <a href="lich-su.html">Lịch sử</a>
+                <a href="gioi-thieu.html">Giới thiệu</a>
+                <a href="lien-he.html">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="tieu-de-trang">
+            <div class="container">
+                <h1>Quản lý mượn - trả sách</h1>
+                <p>Lập phiếu mượn và cập nhật tình trạng trả sách.</p>
+            </div>
+        </section>
+
+        <section class="container noi-dung-muon-tra">
+            <div class="khung-lap-phieu">
+                <h2>Lập phiếu mượn</h2>
+                <form id="form-muon-sach">
+                    <div class="danh-sach-o-nhap">
+                        <div class="o-nhap">
+                            <label for="ma-phieu">Mã phiếu</label>
+                            <input type="text" id="ma-phieu" placeholder="Ví dụ: PM005">
+                        </div>
+                        <div class="o-nhap">
+                            <label for="chon-nguoi-doc">Người đọc</label>
+                            <select id="chon-nguoi-doc">
+                                <option value="">-- Chọn người đọc --</option>
+                                <option value="ND001">ND001 - Từ Huy</option>
+                                <option value="ND002">ND002 - Nguyễn Trọng Văn</option>
+                                <option value="ND003">ND003 - Nguyễn Lê Minh Thuận</option>
+                                <option value="ND004">ND004 - Lê Khánh Văn</option>
+                                <option value="ND005">ND005 - Lư Hoàng Thế Châu</option>
+                                <option value="ND006" disabled>ND006 - Lê Văn Vàng (Bị khóa)</option>
+                            </select>
+                        </div>
+                        <div class="o-nhap">
+                            <label for="chon-sach">Sách mượn</label>
+                            <select id="chon-sach">
+                                <option value="">-- Chọn sách --</option>
+                                <option value="S001">Cấu trúc dữ liệu và thuật toán (Tập 1)</option>
+                                <option value="S002">Lập trình Python cơ bản</option>
+                                <option value="S003">ChatGPT - Ứng dụng trí tuệ nhân tạo</option>
+                                <option value="S004" disabled>IELTS 4 kỹ năng (Tập 1) - Hết sách</option>
+                                <option value="S005">IELTS 4 kỹ năng (Tập 2)</option>
+                                <option value="S006">Hai Đứa Trẻ</option>
+                                <option value="S007">Lão Hạc</option>
+                                <option value="S008">Vợ Nhặt</option>
+                            </select>
+                        </div>
+                        <div class="o-nhap">
+                            <label for="ngay-muon">Ngày mượn</label>
+                            <input type="text" id="ngay-muon" placeholder="dd/mm/yyyy" maxlength="10">
+                        </div>
+                        <div class="o-nhap">
+                            <label for="han-tra">Hạn trả</label>
+                            <input type="text" id="han-tra" placeholder="dd/mm/yyyy" maxlength="10">
+                        </div>
+                    </div>
+                    <button type="submit" class="nut-lap-phieu">Lập phiếu mượn</button>
+                </form>
+            </div>
+
+            <div class="khung-danh-sach-muon">
+                <h2>Danh sách mượn - trả</h2>
+                <div class="bang-muon-tra">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mã phiếu</th>
+                                <th>Người đọc</th>
+                                <th>Tên sách</th>
+                                <th>Ngày mượn</th>
+                                <th>Hạn trả</th>
+                                <th>Ngày trả</th>
+                                <th>Trạng thái</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody id="danh-sach-muon-tra">
+                            <tr>
+                                <td>PM001</td>
+                                <td>ND001 - Từ Huy</td>
+                                <td>Cấu trúc dữ liệu và thuật toán (Tập 1)</td>
+                                <td>24/07/2026</td>
+                                <td>24/08/2026</td>
+                                <td>-</td>
+                                <td><span class="trang-thai-muon dang-muon">Đang mượn</span></td>
+                                <td><button type="button" class="nut-tra-sach">Trả sách</button></td>
+                            </tr>
+                            <tr>
+                                <td>PM002</td>
+                                <td>ND002 - Nguyễn Trọng Văn</td>
+                                <td>IELTS 4 kỹ năng (Tập 1)</td>
+                                <td>06/06/2026</td>
+                                <td>06/07/2026</td>
+                                <td>-</td>
+                                <td><span class="trang-thai-muon qua-han">Quá hạn</span></td>
+                                <td><button type="button" class="nut-tra-sach">Trả sách</button></td>
+                            </tr>
+                            <tr>
+                                <td>PM003</td>
+                                <td>ND004 - Lê Khánh Văn</td>
+                                <td>Lão Hạc</td>
+                                <td>01/06/2026</td>
+                                <td>01/07/2026</td>
+                                <td>17/06/2026</td>
+                                <td><span class="trang-thai-muon da-tra">Đã trả</span></td>
+                                <td><button type="button" class="nut-da-tra" disabled>Đã trả</button></td>
+                            </tr>
+                            <tr>
+                                <td>PM004</td>
+                                <td>ND003 - Nguyễn Lê Minh Thuận</td>
+                                <td>Lập trình Python cơ bản</td>
+                                <td>14/07/2026</td>
+                                <td>14/08/2026</td>
+                                <td>-</td>
+                                <td><span class="trang-thai-muon dang-muon">Đang mượn</span></td>
+                                <td><button type="button" class="nut-tra-sach">Trả sách</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Website quản lý thư viện</p>
+            <p>Sinh viên thực hiện: Nguyễn Thái Vinh</p>
+            <p>MSSV: 110125210</p>
+            <p>Lớp: DA25TTD</p>
+            <p>© <span id="nam-hien-tai"></span> Hệ thống quản lý thư viện</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý người đọc</title>
+    <link rel="stylesheet" href="../css/trang-chu.css">
+    <link rel="stylesheet" href="../css/nguoi-doc.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container header">
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo.jpg" alt="Logo thư viện">
+                <span>THƯ VIỆN TRI THỨC</span>
+            </a>
+            <nav>
+                <a href="../index.html">Trang chủ</a>
+                <a href="quan-ly-sach.html">Quản lý sách</a>
+                <a href="nguoi-doc.html" class="active">Người đọc</a>
+                <a href="muon-tra.html">Mượn - trả</a>
+                <a href="lich-su.html">Lịch sử</a>
+                <a href="gioi-thieu.html">Giới thiệu</a>
+                <a href="lien-he.html">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="tieu-de-trang">
+            <div class="container">
+                <h1>Quản lý người đọc</h1>
+                <p>Quản lý thông tin người đọc trong thư viện.</p>
+            </div>
+        </section>
+
+        <section class="container noi-dung-nguoi-doc">
+            <div class="thanh-cong-cu">
+                <div class="tim-kiem-nguoi-doc">
+                    <input type="text" id="o-tim-nguoi-doc" placeholder="Nhập mã hoặc họ tên">
+                    <select id="loc-trang-thai-nguoi-doc">
+                        <option value="">Tất cả trạng thái</option>
+                        <option value="Hoạt động">Hoạt động</option>
+                        <option value="Bị khóa">Bị khóa</option>
+                    </select>
+                    <button type="button" id="nut-tim-nguoi-doc">Tìm kiếm</button>
+                </div>
+                <button type="button" id="nut-them-nguoi-doc" class="nut-them-nguoi-doc">+ Thêm người đọc</button>
+            </div>
+
+            <div class="bang-nguoi-doc">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mã người đọc</th>
+                            <th>Họ và tên</th>
+                            <th>Lớp</th>
+                            <th>Số điện thoại</th>
+                            <th>Email</th>
+                            <th>Ngày đăng ký</th>
+                            <th>Trạng thái</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="danh-sach-nguoi-doc">
+                        <tr>
+                            <td>ND001</td>
+                            <td>Từ Huy</td>
+                            <td>DA25TTD</td>
+                            <td>0912345605</td>
+                            <td>tuhuy.nd001@example.com</td>
+                            <td>08/10/2025</td>
+                            <td><span class="trang-thai hoat-dong">Hoạt động</span></td>
+                            <td>
+                                <button type="button" class="nut-sua-nguoi-doc">Sửa</button>
+                                <button type="button" class="nut-xoa-nguoi-doc">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ND002</td>
+                            <td>Nguyễn Trọng Văn</td>
+                            <td>DA25TTD</td>
+                            <td>0912345604</td>
+                            <td>trongvan.nd002@example.com</td>
+                            <td>18/11/2025</td>
+                            <td><span class="trang-thai hoat-dong">Hoạt động</span></td>
+                            <td>
+                                <button type="button" class="nut-sua-nguoi-doc">Sửa</button>
+                                <button type="button" class="nut-xoa-nguoi-doc">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ND003</td>
+                            <td>Nguyễn Lê Minh Thuận</td>
+                            <td>DA25TTD</td>
+                            <td>0912345606</td>
+                            <td>thuan.nd003@example.com</td>
+                            <td>25/11/2025</td>
+                            <td><span class="trang-thai hoat-dong">Hoạt động</span></td>
+                            <td>
+                                <button type="button" class="nut-sua-nguoi-doc">Sửa</button>
+                                <button type="button" class="nut-xoa-nguoi-doc">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ND004</td>
+                            <td>Lê Khánh Văn</td>
+                            <td>DA25TTD</td>
+                            <td>0912345603</td>
+                            <td>van.nd004@example.com</td>
+                            <td>12/02/2026</td>
+                            <td><span class="trang-thai hoat-dong">Hoạt động</span></td>
+                            <td>
+                                <button type="button" class="nut-sua-nguoi-doc">Sửa</button>
+                                <button type="button" class="nut-xoa-nguoi-doc">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ND005</td>
+                            <td>Lư Hoàng Thế Châu</td>
+                            <td>DA25TTD</td>
+                            <td>0912345601</td>
+                            <td>chau.nd005@example.com</td>
+                            <td>18/02/2026</td>
+                            <td><span class="trang-thai hoat-dong">Hoạt động</span></td>
+                            <td>
+                                <button type="button" class="nut-sua-nguoi-doc">Sửa</button>
+                                <button type="button" class="nut-xoa-nguoi-doc">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ND006</td>
+                            <td>Lê Văn Vàng</td>
+                            <td>DA25TTD</td>
+                            <td>0912345602</td>
+                            <td>vang.nd006@example.com</td>
+                            <td>06/03/2026</td>
+                            <td><span class="trang-thai bi-khoa">Bị khóa</span></td>
+                            <td>
+                                <button type="button" class="nut-sua-nguoi-doc">Sửa</button>
+                                <button type="button" class="nut-xoa-nguoi-doc">Xóa</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Website quản lý thư viện</p>
+            <p>Sinh viên thực hiện: Nguyễn Thái Vinh</p>
+            <p>MSSV: 110125210</p>
+            <p>Lớp: DA25TTD</p>
+            <p>© <span id="nam-hien-tai"></span> Hệ thống quản lý thư viện</p>
+        </div>
+    </footer>
+</body>
+</html>

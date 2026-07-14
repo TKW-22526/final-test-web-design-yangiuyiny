@@ -1,0 +1,228 @@
+.tieu-de-trang {
+    background-color: #176b3a;
+    color: white;
+    text-align: center;
+    padding: 35px 0;
+}
+
+.tieu-de-trang h1 {
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+.noi-dung-quan-ly {
+    padding: 35px 0 50px;
+}
+
+.thanh-cong-cu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 22px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.tim-kiem-sach {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tim-kiem-sach input,
+.tim-kiem-sach select {
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    background-color: white;
+    outline: none;
+}
+
+.tim-kiem-sach input {
+    width: 300px;
+}
+
+.tim-kiem-sach select {
+    width: 190px;
+}
+
+.tim-kiem-sach input:focus,
+.tim-kiem-sach select:focus {
+    border-color: #176b3a;
+}
+
+.tim-kiem-sach button,
+.nut-them-sach {
+    height: 42px;
+    padding: 0 17px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tim-kiem-sach button {
+    background-color: #555;
+}
+
+.tim-kiem-sach button:hover {
+    background-color: #333;
+}
+
+.nut-them-sach {
+    background-color: #176b3a;
+}
+
+.nut-them-sach:hover {
+    background-color: #10542d;
+}
+
+.bang-sach {
+    width: 100%;
+    overflow-x: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+.bang-sach table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.bang-sach th,
+.bang-sach td {
+    border: 1px solid #ddd;
+    padding: 12px 10px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.bang-sach th {
+    background-color: #176b3a;
+    color: white;
+    font-size: 15px;
+}
+
+.bang-sach td {
+    font-size: 15px;
+}
+
+.bang-sach tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.bang-sach tr:hover {
+    background-color: #edf7f0;
+}
+
+/* Độ rộng các cột */
+.bang-sach th:nth-child(1),
+.bang-sach td:nth-child(1) {
+    width: 7%;
+}
+
+.bang-sach th:nth-child(2),
+.bang-sach td:nth-child(2) {
+    width: 34%;
+}
+
+.bang-sach th:nth-child(3),
+.bang-sach td:nth-child(3) {
+    width: 13%;
+}
+
+.bang-sach th:nth-child(4),
+.bang-sach td:nth-child(4) {
+    width: 13%;
+}
+
+.bang-sach th:nth-child(5),
+.bang-sach td:nth-child(5) {
+    width: 7%;
+    text-align: center;
+}
+
+.bang-sach th:nth-child(6),
+.bang-sach td:nth-child(6) {
+    width: 11%;
+    text-align: center;
+}
+
+.bang-sach th:nth-child(7),
+.bang-sach td:nth-child(7) {
+    width: 15%;
+    text-align: center;
+}
+
+.trang-thai {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.con-sach {
+    color: #08752a;
+    background-color: #dff3e5;
+}
+
+.het-sach {
+    color: #c82020;
+    background-color: #fde3e3;
+}
+
+.nhom-nut {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.nut-xem,
+.nut-sua,
+.nut-xoa {
+    display: inline-block;
+    padding: 6px 9px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    text-align: center;
+}
+
+.nut-xem {
+    background-color: #1677b8;
+}
+
+.nut-sua {
+    background-color: #d68a00;
+}
+
+.nut-xoa {
+    background-color: #c93434;
+}
+
+.nut-xem:hover,
+.nut-sua:hover,
+.nut-xoa:hover {
+    opacity: 0.85;
+}
+
+@media screen and (max-width: 900px) {
+    .bang-sach table {
+        min-width: 900px;
+    }
+}   

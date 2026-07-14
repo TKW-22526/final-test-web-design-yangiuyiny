@@ -1,0 +1,176 @@
+.tieu-de-trang {
+    background-color: #176b3a;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.tieu-de-trang h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.noi-dung-lich-su {
+    padding: 40px 0;
+}
+
+.thong-ke-lich-su {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.o-thong-ke-lich-su {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.o-thong-ke-lich-su h3 {
+    color: #176b3a;
+    font-size: 28px;
+}
+
+.thanh-tim-lich-su {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.thanh-tim-lich-su input,
+.thanh-tim-lich-su select {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+.thanh-tim-lich-su input {
+    width: 350px;
+}
+
+.thanh-tim-lich-su button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+#nut-tim-lich-su {
+    background-color: #176b3a;
+}
+
+#nut-lam-moi-lich-su {
+    background-color: #555;
+}
+
+.so-luong-ket-qua {
+    margin-bottom: 10px;
+}
+
+.bang-lich-su {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.bang-lich-su table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.bang-lich-su th,
+.bang-lich-su td {
+    border: 1px solid #ddd;
+    padding: 12px 10px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.bang-lich-su th {
+    background-color: #176b3a;
+    color: white;
+}
+
+.bang-lich-su tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.bang-lich-su tr:hover {
+    background-color: #eef8f1;
+}
+
+.bang-lich-su th:nth-child(1),
+.bang-lich-su td:nth-child(1) {
+    width: 10%;
+}
+
+.bang-lich-su th:nth-child(2),
+.bang-lich-su td:nth-child(2) {
+    width: 21%;
+}
+
+.bang-lich-su th:nth-child(3),
+.bang-lich-su td:nth-child(3) {
+    width: 25%;
+}
+
+.bang-lich-su th:nth-child(4),
+.bang-lich-su td:nth-child(4),
+.bang-lich-su th:nth-child(5),
+.bang-lich-su td:nth-child(5),
+.bang-lich-su th:nth-child(6),
+.bang-lich-su td:nth-child(6) {
+    width: 11%;
+    text-align: center;
+}
+
+.bang-lich-su th:nth-child(7),
+.bang-lich-su td:nth-child(7) {
+    width: 11%;
+    text-align: center;
+}
+
+.trang-thai-lich-su {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.dang-muon {
+    color: #1677b8;
+}
+
+.da-tra {
+    color: green;
+}
+
+.qua-han {
+    color: red;
+}
+
+@media screen and (max-width: 900px) {
+    .bang-lich-su {
+        overflow-x: auto;
+    }
+
+    .bang-lich-su table {
+        min-width: 950px;
+    }
+}
+.khong-co-du-lieu {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    color: #666;
+}
