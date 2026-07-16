@@ -175,10 +175,10 @@ Sinh viên cần nộp đầy đủ các nội dung sau:
 Sinh viên cập nhật thông tin cá nhân tại đây:
 
 ```text
-Họ và tên: Nguyễn Thái Vinh
-Mã số sinh viên: 110125210
-Lớp: DA25TTD
-Tên đề tài: Thiết kế website quản lý thư viện
+Họ và tên:
+Mã số sinh viên:
+Lớp:
+Tên đề tài:
 Liên kết GitHub repository:
 Liên kết GitHub Pages:
 ```

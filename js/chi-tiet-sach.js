@@ -8,7 +8,7 @@ const duLieuChiTietSach = {
         namXuatBan: 2023,
         soLuong: 6,
         viTri: "A01",
-        bia: "../assets/images/cntt001.jpg",
+        bia: "../assets/cntt001.jpg",
         moTa: "Cấu trúc dữ liệu và Thuật toán là môn học bắt buộc đối với sinh viên ngành Công nghệ thông tin."
     },
 
@@ -21,7 +21,7 @@ const duLieuChiTietSach = {
         namXuatBan: 2023,
         soLuong: 3,
         viTri: "A02",
-        bia: "../assets/images/cntt002.jpg",
+        bia: "../assets/cntt002.jpg",
         moTa: "Sách giới thiệu những kiến thức cơ bản về Python, cách lập trình và áp dụng vào các bài toán thực tế."
     },
 
@@ -34,7 +34,7 @@ const duLieuChiTietSach = {
         namXuatBan: 2025,
         soLuong: 4,
         viTri: "B01",
-        bia: "../assets/images/de-men-phieu-luu-ky.jpg",
+        bia: "../assets/cntt003.jpg",
         moTa: "Sách hướng dẫn cách sử dụng Chat GPT và các công cụ trí tuệ nhân tạo khác để nâng cao hiệu suất làm việc và sáng tạo."
     },
 
@@ -47,7 +47,7 @@ const duLieuChiTietSach = {
         namXuatBan: 2023,
         soLuong: 0,
         viTri: "A03",
-        bia: "../assets/images/eng001.jpg",
+        bia: "../assets/eng001.jpg",
         moTa: "Sách hướng dẫn người học IELTS cải thiện kỹ năng tiếng Anh và chuẩn bị cho kỳ thi."
     },
     S005: {
@@ -59,7 +59,7 @@ const duLieuChiTietSach = {
         namXuatBan: 2023,
         soLuong: 2,
         viTri: "A04",
-        bia: "../assets/images/eng002.jpg",
+        bia: "../assets/eng002.jpg",
         moTa: "Sách hướng dẫn người học IELTS cải thiện kỹ năng tiếng Anh và chuẩn bị cho kỳ thi."
     },
     S006: {
@@ -71,7 +71,7 @@ const duLieuChiTietSach = {
         namXuatBan: 2026,
         soLuong: 5,
         viTri: "A05",
-        bia: "../assets/images/vh001.jpg",
+        bia: "../assets/vh001.jpg",
         moTa: "Tác phẩm kể về cuộc sống của hai đứa trẻ trong một làng quê Việt Nam, phản ánh những khó khăn và niềm vui trong cuộc sống hàng ngày."
     },
 
@@ -84,7 +84,7 @@ const duLieuChiTietSach = {
         namXuatBan: 2022,
         soLuong: 4,
         viTri: "A05",
-        bia: "../assets/images/vh002.jpg",
+        bia: "../assets/vh002.jpg",
         moTa: "Tác phẩm kể về cuộc sống của Lão Hạc, một người nông dân nghèo, và những khó khăn mà ông phải đối mặt trong xã hội."
     },
     S008: {
@@ -96,7 +96,7 @@ const duLieuChiTietSach = {
         namXuatBan: 2022,
         soLuong: 8,
         viTri: "A05",
-        bia: "../assets/images/vh003.jpg",
+        bia: "../assets/vh003.jpg",
         moTa: "Tập truyện ngắn “Vợ nhặt” tập hợp những truyện ngắn đặc sắc nhất của Kim Lân – một cây bút truyện ngắn vững vàng, viết về cuộc sống và con người ở nông thôn bằng tình cảm, tâm hồn của một người vốn là con đẻ của đồng ruộng."
     }
 };
